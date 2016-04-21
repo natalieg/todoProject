@@ -49,8 +49,6 @@ public class TodoGui {
         _left.setBackground(Color.white);
         _left.setPreferredSize(new Dimension(_width / 2, _height));
 
-        _refreshButton = new JButton("Refresh");
-        _frame.add(_refreshButton);
         _right = new JPanel();
         _right.setBackground(Color.white);
         _right.setPreferredSize(new Dimension(_width / 2, _height));
@@ -95,23 +93,6 @@ public class TodoGui {
             }
         });
         //_frame.repaint();
-
-        _refreshButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-                _left.removeAll();
-                try {
-                    _left.add(initialisiereWeeklyTodo(changemeTodoList));
-                } catch (IOException e1) {
-                    e1.printStackTrace();
-                } catch (ParseException e1) {
-                    e1.printStackTrace();
-                }
-                _frame.validate();
-            }
-        });
-
     }
 
     /**
