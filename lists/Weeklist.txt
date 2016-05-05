@@ -1,6 +1,6 @@
-Anatomy Studien, true
+Anatomy Studien, false
 Charakterprojekt, true
 Schreibtisch aufräumen, true
-test1, true
+test1, false
 test2, false
 test3, true
